@@ -1,6 +1,7 @@
 package me.hideplayer;
 
 import me.hideplayer.comandos.Hide;
+import me.hideplayer.comandos.Show;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -19,6 +20,7 @@ public class Main extends JavaPlugin {
 		PluginManager pm = Bukkit.getPluginManager();
 		
 		pm.registerEvents(new Hide(), this);
+		pm.registerEvents(new Show(), this);
 		
 		
 	}
@@ -26,6 +28,7 @@ public class Main extends JavaPlugin {
 	public void registrarComandos() {
 		
 		getCommand("hide").setExecutor(new Hide());
+		getCommand("show").setExecutor(new Show());
 		
 		
 	}
