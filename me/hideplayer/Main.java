@@ -1,3 +1,4 @@
+
 package me.hideplayer;
 
 import me.hideplayer.comandos.Hide;
